@@ -8,3 +8,5 @@ docker build -t nikhilmatta5/go-web-app:v1
 docker run -p 8080:8080 -it nikhil478/go-web-app:v1
 docker push nikhil478/go-web-app:v1
 
+
+https://docs.digitalocean.com/reference/doctl/how-to/install/
