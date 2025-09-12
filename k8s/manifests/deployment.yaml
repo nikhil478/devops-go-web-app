@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels: 
-        app: nginx
+        app: go-web-app
     spec:
       containers:
       - name: go-web-app
-        image: nikhil478/go-web-app
+        image: nikhil478/go-web-app:v1
         ports:
         - containerPort: 8080
