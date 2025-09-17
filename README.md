@@ -1,5 +1,19 @@
 # devops-go-web-app
 
+What i covered : 
+    Containerization -> Dockerfile
+    Kubernetes -> deployment, ingest, service
+    CI -> github actions
+    CD -> argoCD
+    Kubernetes -> DOKS
+    Helm ->
+        : dev
+        : qa
+        : prod
+    IngressController -> Load Balancer -> DOKS
+    Load Balanacer -> DNS
+
+
 go build -o main . 
 ./main
 
