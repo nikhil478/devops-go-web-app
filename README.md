@@ -4,7 +4,14 @@ What i covered :
     Containerization -> Dockerfile
     Kubernetes -> deployment, ingest, service
     CI -> github actions
+        - build and test
+        - static code analysis
+        - docker image push
+        - update helm
     CD -> argoCD
+        - pull the helm chart
+        - deploy it on kubernetes
+
     Kubernetes -> DOKS
     Helm ->
         : dev
