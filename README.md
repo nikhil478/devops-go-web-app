@@ -1,33 +1,42 @@
 # devops-go-web-app
 
-What i covered : 
-    Containerization -> Dockerfile
-    Kubernetes -> deployment, ingest, service
-    CI -> github actions
-        - build and test
-        - static code analysis
-        - docker image push
-        - update helm
-    CD -> argoCD
-        - pull the helm chart
-        - deploy it on kubernetes
+A complete template to build, containerize, and deploy a **Go web application** with a modern DevOps stack on **DigitalOcean Kubernetes (DOKS)**.
 
-    Kubernetes -> DOKS
-    Helm ->
-        : dev
-        : qa
-        : prod
-    IngressController -> Load Balancer -> DOKS
-    Load Balanacer -> DNS
+## Features Covered
 
+### Containerization
+- **Dockerfile** to build and run the Go application.
 
-go build -o main . 
+### Kubernetes
+- **Deployment**, **Service**, and **Ingress** manifests.
+- **Ingress Controller** integrated with a **DigitalOcean Load Balancer** and DNS.
+
+### Continuous Integration (CI)
+Implemented with **GitHub Actions**:
+- Build and test the Go application.
+- Static code analysis.
+- Build and push Docker images.
+- Update Helm chart automatically.
+
+### Continuous Delivery (CD)
+Implemented with **Argo CD**:
+- Pulls the Helm chart from GitHub.
+- Deploys the application to Kubernetes.
+
+### Helm
+- Environment-based Helm charts for:
+  - **dev**
+  - **qa**
+  - **prod**
+
+### DigitalOcean Kubernetes (DOKS)
+- Managed Kubernetes cluster hosting the entire setup.
+
+---
+
+## Quick Start
+
+### Build and Run Locally
+```bash
+go build -o main .
 ./main
-
-
-docker build -t nikhilmatta5/go-web-app:v1
-docker run -p 8080:8080 -it nikhil478/go-web-app:v1
-docker push nikhil478/go-web-app:v1
-
-
-https://docs.digitalocean.com/reference/doctl/how-to/install/
