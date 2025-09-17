@@ -12,7 +12,9 @@ func main(){
 	handler := http.NewServeMux()
 
 	handler.HandleFunc("/hello", func(w http.ResponseWriter,r *http.Request){
+		
 		w.WriteHeader(200)
+
 		w.Write([]byte("Hello World !"))
 	})
 
